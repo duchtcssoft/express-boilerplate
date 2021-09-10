@@ -47,6 +47,7 @@ Express, Docker, Typescript, Production ready, Authentication Boilerplate
 Install Docker: https://docs.docker.com/get-docker/
 yarn install
 yarn start
+Open http://localhost:8000/v1/docs
 ```
 
 ## Commands
