@@ -1,6 +1,15 @@
 # Express Boilerplate
 Express, Docker, Typescript, Production ready, Authentication Boilerplate
 
+## Quick Start
+
+```bash
+Install Docker: https://docs.docker.com/get-docker/
+yarn install
+yarn start
+Open http://localhost:8000/v1/docs
+```
+
 ## Table of Contents
 
 - [Features](#features)
@@ -40,15 +49,6 @@ Express, Docker, Typescript, Production ready, Authentication Boilerplate
 - **Linting**: with [ESLint](https://eslint.org) and [Prettier](https://prettier.io)
 - **Editor config**: consistent editor configuration using [EditorConfig](https://editorconfig.org)
 - **NoSQL database**: [MongoDB](https://www.mongodb.com) object data modeling using [Mongoose](https://mongoosejs.com)
-
-## Quick Start
-
-```bash
-Install Docker: https://docs.docker.com/get-docker/
-yarn install
-yarn start
-Open http://localhost:8000/v1/docs
-```
 
 ## Commands
 
