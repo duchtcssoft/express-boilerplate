@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  express-app-dev-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: express-app-dev
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/node-boilerplate
+    container_name: express-app-dev-container
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/usr/src/express-app-dev
+      - /usr/src/express-app-dev/node_modules
+    networks:
+      - node-network
+    command: yarn run -L cross-env NODE_ENV=development nodemon src/index.ts
+    env_file: ./.env.example

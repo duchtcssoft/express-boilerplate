@@ -1,0 +1,15 @@
+FROM node:14.17.4-alpine
+
+RUN mkdir -p /usr/src/express-app-prod && chown -R node:node /usr/src/express-app-prod
+
+WORKDIR /usr/src/express-app-prod
+
+COPY package.json yarn.lock ./
+
+USER node
+
+RUN yarn install --production --pure-lockfile
+
+RUN yarn run build:prod
+
+COPY --chown=node:node ./build .
