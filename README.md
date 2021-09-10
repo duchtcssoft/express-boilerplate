@@ -14,8 +14,6 @@ Open http://localhost:8000/v1/docs
 
 - [Features](#features)
 - [Commands](#commands)
-- [Environment Variables](#environment-variables)
-- [Project Structure](#project-structure)
 - [API Documentation](#api-documentation)
 - [Error Handling](#error-handling)
 - [Validation](#validation)
@@ -23,8 +21,6 @@ Open http://localhost:8000/v1/docs
 - [Authorization](#authorization)
 - [Logging](#logging)
 - [Custom Mongoose Plugins](#custom-mongoose-plugins)
-- [Linting](#linting)
-- [Contributing](#contributing)
 
 ## Features
 
