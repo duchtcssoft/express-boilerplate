@@ -2,7 +2,7 @@
 import { TActionNames, TRoleNames } from "./type";
 
 const allRoles: { [key in TRoleNames]: readonly TActionNames[] } = {
-  user: Object.freeze(["getUsers", "manageUsers"]),
+  user: Object.freeze(["getUsers"]),
   admin: Object.freeze(["getUsers", "manageUsers"]),
 };
 
